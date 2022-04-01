@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+}
+a{
+    text-decoration: none;
+    margin: 5px;
+    color: white;
+    font-weight: 200;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-image: url('imgs/cachorro-background.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+a:hover{
+    color: rgb(67, 252, 160);
+    text-decoration: underline;
+}
+
+#navbar{
+    display: flex;
+    justify-content: end;
+    margin: 20px 40px;
+}
+
+.barraPesquisa{
+    border-radius: 20px;
+    border: none;
+    padding: 7px;
+    background-color: rgb(233, 233, 233);
+}
+.barraPesquisa:focus{
+    border:none;
+    outline: 0;
+}
+#containerHome{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.logo h1{
+    font-size: 38px;
+}
+
+.textHome{
+    margin-top: 70px;
+    width: 500px;
+}
+
+.textHome h3{
+    color: white;
+    font-weight: 300;
+}
+
+.button{
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+    border:none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    width: 250px;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+.button:active{
+    background-color: #DDD;
+}
+
+.text{
+    margin: 10px 0px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
