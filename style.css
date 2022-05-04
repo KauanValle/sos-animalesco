@@ -11,7 +11,6 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 ul li {
@@ -28,7 +27,7 @@ a{
 header{
     display: flex;
     flex-direction: column;
-    background-image: url('imgs/cachorro-background.jpeg');
+    background-image: url('imgs/pexels-christian-domingues-731022.jpg');
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -39,11 +38,20 @@ a:hover{
     color: rgb(67, 252, 160);
     text-decoration: underline;
 }
-
+#titlePrincipal{
+    font-size: 50px;
+    margin: 10px 0px;
+    color: white;
+}
 #navbar{
     display: flex;
     justify-content: end;
-    margin: 20px 40px;
+    width: 80%;
+    margin: 40px 0px;
+}
+#containerNavbar{
+    display: flex;
+    justify-content: center;
 }
 
 .barraPesquisa{
@@ -57,7 +65,8 @@ a:hover{
     outline: 0;
 }
 #containerHome{
-    width: 800px;
+    
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -67,12 +76,13 @@ a:hover{
 }
 
 .textHome{
-    margin-top: 70px;
-    width: 500px;
+    margin-top: 110px;
+    border-radius: 50px;
+    width: 400px;
 }
 
 .textHome h3{
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 300;
 }
 
@@ -95,4 +105,251 @@ a:hover{
     margin: 10px 0px;
     color: white;
     font-family: 'Quicksand', sans-serif;
+}
+
+#containerBlog {
+    display: flex;
+    justify-content: center;
+}
+#blog{
+    height: 100vh;
+    width: 80%;
+}
+#blog h2{
+    font-size: 60px;
+    margin: 70px 0px;
+}
+#textoBlog{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.imgs{
+    width: 300px;
+    height: 300px;
+}
+
+#areaImgs{
+    margin: 50px 0px;
+    justify-content: center;
+    display: flex;
+}
+.postagem{
+    width: 300px;
+    margin: 20px;
+}
+.postagem h3{
+    font-size: 26px;
+    margin: 20px 0;
+}
+
+.buttonAlternativo{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #55a0bd;
+    border:none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    width: 250px;
+    border-radius: 30px;
+    box-shadow: 1px 2px 15px rgb(138, 138, 138);
+}
+
+.buttonAlternativo:active{
+    background-color: #71d3fa;
+}
+#containerQuemSomos{
+    height: 100vh;
+    width: 100%;
+    background-color: #55a0bd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+#containerPostagemQuemSomos{
+    margin-top: 150px;
+    justify-content: center;
+    display: flex;
+}
+#containerSaibaMais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imgsSaibaMais{
+    width: 400px;
+    height: 400px;
+    box-shadow: 10px 10px 30px black;
+}
+
+.postagemSaibaMais{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.textoSaibaMais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoSaibaMais p{
+    width: 80%;
+    margin: 50px 0;
+}
+
+.textoSaibaMais h2{
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+#saibaMais{
+    
+    height: 100vh;
+    width: 80%;
+}
+.containerButton{
+    text-align: center;
+}
+
+.marginButton{
+    margin-top: 120px;
+}
+
+#quemSomos{
+    width: 80%;
+}
+#tituloQuemSomos{
+    font-size: 60px;
+    margin: 70px 0px;
+}
+
+.divisao{
+    margin: 20px;
+    width: 40%;
+}
+
+.divisao p {
+    font-size: 20px;
+}
+
+#textoForm h2{
+    font-size: 60px;
+    margin: 70px 0px;
+    
+}
+
+#textoForm {
+    color: white;
+}
+
+
+#containerDivisor{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+#divisor{
+    background-color: white;
+    width: 260px;
+    height: 5px;
+    border-radius: 30px;
+    display: flex;
+    justify-self: center;
+}
+
+#containerFormulario{
+    display: flex;
+    background-color: #55a0bd;
+    align-items: center;
+    justify-content: center;
+}
+#formulario {
+    width: 80%;
+    height: 100vh;
+    
+}
+
+#textAreaForm{
+    text-align: center;
+}
+
+#textArea{
+    width: 700px;
+    height: 350px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 30px 30px 0px 0px;
+    border: none;
+}
+
+#input{
+    margin: 30px 0px;
+    width: 500px;
+    font-size: 20px;
+    height: 23px;
+    padding: 20px;
+    border: none;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#buttonForm{
+    margin: 30px 0px;
+    width: 220px;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #222;
+    color: white;
+    font-weight: bold;
+}
+
+#input:focus, #textArea:focus{
+    outline: 0;
+}
+#containerCreditos{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#creditos{
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.postagemCreditos{
+    width: 440px;
+    text-align: center;
+}
+
+#containerPostagem{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#containerTextoPostagem{
+    display: flex;
+    justify-content: center;
+}
+
+#postagemTexto {
+    text-align: center;
+    width: 70%;
+    margin-top: 200px;
+}
+#postagemTexto p {
+    margin-top: 50px;
 }
