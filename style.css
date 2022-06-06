@@ -38,9 +38,9 @@ a {
 }
 
 .carousel .card{
-    max-width: 28rem;
+    max-width: 30rem;
     min-height: 20rem;
-    margin: 0 auto;
+    margin: 0 auto 5%;
     background-color: rgba(255, 255, 255, 0.6) ;
 }
 
@@ -60,7 +60,6 @@ header {
     flex-direction: column;
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/header-bg.jpg");
-
 
     background-position: center;
     background-size: cover;
@@ -391,5 +390,6 @@ a:hover {
 @media (max-width: 770px) {
     header {
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("images/header-bg.jpg");
+        background-position-x: right;
     }
 }
