@@ -1,87 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
 <head>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-W2P5DMZ');</script>
+
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l !== 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-W2P5DMZ');</script>
+
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!--  CSS & Bootstrap -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+
+    <!--  Javascript   -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <title>Document</title>
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+          integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+
+    <title>SOS Animalesco</title>
+
+
 </head>
+
 <body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2P5DMZ"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <div class="container">
+    <noscript>
+        <iframe height="0"
+                src="https://www.googletagmanager.com/ns.html?id=GTM-W2P5DMZ" style="display:none;visibility:hidden"
+                width="0"></iframe>
+    </noscript>
 
-        <header>
-            <div id="containerNavbar">
-                <div id="navbar">
-                    <ul>
-                        <li><a href="#">Menu 1</a></li>
-                        <li><a href="#">Menu 2</a></li>
-                        <li><a href="#">Menu 3</a></li>
-                        <li><input type="text" class="barraPesquisa"></li>
-                    </ul>
-                </div>
+
+
+    <header>
+
+        <nav id="containerNavbar" class="navbar navbar-expand-lg navbar-light pe-5">
+            <div class="container" id="containerHome">
+                <a class="navbar-brand " href="#">
+                    <img src="images/logo/logo-azul.png" alt="" width="160" height="160" class="d-inline-block ">
+                    <h1 class="text-light d-inline-block ms-3">S.O.S Animalesco</h1>
+                </a>
             </div>
-            <div id="containerHome">
-                <div class="logo">
-                    <img src="images/logo/logo-azul.png" width="130px" alt="">
-                    <h1 id="titlePrincipal">S.O.S Animalesco</h1>
-                </div>
-                <div class="textHome">
-                    <h3>Lorem Impsum asdsd</h3>
+            <div id="navbar" class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <button class="button">QUEM SOMOS?</button>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quia illum voluptatem
-                        expedita necessitatibus odit quibusdam veniam dolorem recusandae modi? Explicabo, ut iusto. Incidunt
-                        optio repellat doloribus consequatur, ullam dolore.</p>
-                </div>
+                <ul class="nav navbar-nav navbar-right me-5 ">
+
+                    <li class="nav-item bg-white rounded-pill mx-2">
+                        <a class="nav-link" href="#quemSomos">Quem somos</a>
+                    </li>
+
+                    <li class="nav-item bg-white rounded-pill mx-2">
+                        <a class="nav-link" href="#nossosParceiros">Nossos Parceiros</a>
+                    </li>
+                </ul>
             </div>
+        </nav>
 
-        </header>
+
+
+
+
+
+
+<!--        <div id="containerHome">-->
+
+<!--            <div class="logo">-->
+<!--                <div class="row align-text-top">-->
+
+
+
+<!--                    <div class="col-3">-->
+<!--                        <img class="float-start"alt="" src="images/logo/logo-azul.png" width="130px">-->
+<!--                    </div>-->
+
+<!--                    <div class="col-12 col-sm-12 col-md-9">-->
+<!--                        <h1 id="titlePrincipal">S.O.S Animalesco</h1>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--        </div>-->
+
+
+    </header>
+
         <section>
+
             <!-- Blog -->
             <div id="containerBlog">
                 <div id="blog">
-                    <div id="textoBlog">
-                        <h2>Lorem Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, dicta voluptates quasi adipisci
-                            sapiente quas autem debitis incidunt fuga earum perspiciatis at, velit alias dignissimos
-                            doloremque ipsum repellendus, aliquid perferendis?</p>
-                    </div>
-                    <div id="areaImgs">
-                        <div class="postagem">
-                            <img src="images/pexels-emma-charles-7319890.jpg" class="imgs" alt="">
-                            <h3>Titulo aqui</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet
-                                consectetur adipisicing elit. </p>
-                        </div>
-                        <div class="postagem">
-                            <img src="images/pexels-emma-charles-7319890.jpg" class="imgs" alt="">
-                            <h3>Titulo aqui</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet
-                                consectetur adipisicing elit. </p>
-                        </div>
-                        <div class="postagem">
-                            <img src="images/pexels-emma-charles-7319890.jpg" class="imgs" alt="">
-                            <h3>Titulo aqui</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet
-                                consectetur adipisicing elit. </p>
+                    <div id="myCarousel"  class="carousel carousel-dark slide container mt-auto mb-auto" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">E aí, querendo ter um pet? </h5>
+                                        <p>Que tal adotar aquele que vai ser eternamente grato a você e a sua família? Você pode salvar uma vida! Adote.   </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Você Sabia ?</h3>
+
+                                        <p>A Organização Mundial da Saúde (OMS) estima que há mais de 30 milhões de animais abandonados no Brasil, cerca de 20 milhões de cães e 10 milhões de gatos.
+                                            Os cães podem até ser considerado os melhores amigos do homem, mas nem sempre o homem é o melhor amigo deles. </p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+
+
+                                <div class="card bg-outline-dark">
+                                    <h3 class="card-title text-center">Tomba Latas</h3>
+                                    <img src="images/tomba-latas.png" height="250" class="card-img-top" alt="Logo Tomba-Latas">
+                                    <div class="card-body">
+                                        <p>Uma alternativa de ser um herói é entrando em contato com o nosso parceiro Tomba Latas que eles têm vários animaizinhos abrigados esperando um novo lar. <a href="#nossosParceiros"> Saiba Mais  </a> </p>
+                                        <a href="https://www.instagram.com/tombalatas/" target="_blank" class="btn btn-outline-dark"><i class="fab fa-instagram"></i> </a>
+
+                                        <a href="https://pt-br.facebook.com/tombalatas/" target="_blank" class="btn btn-outline-dark"><i class="fab fa-facebook"></i> </a>
+
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
 
-                    </div>
-                    <div class="containerButton">
-                        <button class="buttonAlternativo">Saiba mais</button>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -89,139 +173,149 @@
 
             <!-- Quem somos -->
             <div id="containerQuemSomos">
-                <div id="quemSomos">
-                    <h2 id="tituloQuemSomos">Quem somos?</h2>
+                <div class="quemSomos">
+                    <h2 class="titulo">Quem somos?</h2>
                     <div id="containerPostagemQuemSomos">
-                        <div class="divisao">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eum perferendis nihil
-                                ratione excepturi animi officia sequi dignissimos praesentium! Non, maxime accusantium
-                                blanditiis recusandae adipisci ab dolore aliquam esse iusto.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eum perferendis nihil
-                                ratione excepturi animi officia sequi dignissimos praesentium! Non, maxime accusantium
-                                blanditiis recusandae adipisci ab dolore aliquam esse iusto.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eum perferendis nihil
-                                ratione excepturi animi officia sequi dignissimos praesentium! Non, maxime accusantium
-                                blanditiis recusandae adipisci ab dolore aliquam esse iusto.
-                            </p>
-                        </div>
-                        <div class="divisao">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eum perferendis nihil
-                                ratione excepturi animi officia sequi dignissimos praesentium! Non, maxime accusantium
-                                blanditiis recusandae adipisci ab dolore aliquam esse iusto.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eum perferendis nihil
-                                ratione excepturi animi officia sequi dignissimos praesentium! Non, maxime accusantium
-                                blanditiis recusandae adipisci ab dolore aliquam esse iusto.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eum perferendis nihil
-                                ratione excepturi animi officia sequi dignissimos praesentium! Non, maxime accusantium
-                                blanditiis recusandae adipisci ab dolore aliquam esse iusto.
-                            </p>
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-5">
+                                <div class="card">
+                                    <img src="images/grupo-sos.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text text-dark">Turma Responsável pelo Projeto 2022/01 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6" style="text-align: justify">
+                                <p class="texto">
+                                    O projeto S.O.S Animalesco nasceu de uma iniciativa voluntária estudantil
+                                    multidisciplinar da Universidade Positivo movida pelo desejo de implementar uma ação
+                                    efetiva e colaborativa, focada na divulgação de animais abandonados bem como a busca por
+                                    patrocinadores e doações para as instituições parceiras. <br><br>
+                                    Além de ser a sua dose diária nas redes sociais de informação sobre os cuidados e
+                                    curiosidades dos nossos amados bichinhos. <br><br>
+                                    Nós não possuímos abrigos e não resgatamos animais. Todas as doações e suportes são
+                                    encaminhados para nossos parceiros.
+                                </p>
+                            </div>
                         </div>
 
-                    </div>
-                    <div class="containerButton marginButton">
-                        <button class="button">QUEM SOMOS?</button>
                     </div>
                 </div>
-
             </div>
+
+            <div id="containerParceiros">
+                <div id="nossosParceiros" class="quemSomos">
+                    <h2 class="titulo text-dark">Nossos Parceiros - Tomba Latas</h2>
+
+
+
+
+                </div>
+            </div>
+
 
             <!-- Saiba mais -->
 
-            <div id="containerSaibaMais">
-                <div id="saibaMais">
+<!--            <div id="containerSaibaMais">-->
+<!--                <div id="saibaMais">-->
 
-                    <div class="postagemSaibaMais">
+<!--                    <div class="postagemSaibaMais">-->
 
-                        <div class="textoSaibaMais">
-                            <h2>Lorem Ipsum</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, enim modi. Id itaque est
-                                sapiente omnis debitis neque commodi. Nam, consectetur? Omnis ducimus odio consequuntur
-                                reiciendis vel sapiente ab modi!</p>
-                            <div class="containerButton">
-                                <button class="buttonAlternativo">Saiba mais</button>
-                            </div>
-                        </div>
-                        <img src="images/pexels-tehmasip-khan-6601811.jpg" class="imgsSaibaMais" alt="">
-                    </div>
-                    <div class="postagemSaibaMais">
-                        <img src="images/pexels-emma-charles-7319890.jpg" class="imgsSaibaMais" alt="">
-                        <div class="textoSaibaMais">
-                            <h2>Lorem Ipsum</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, enim modi. Id itaque est
-                                sapiente omnis debitis neque commodi. Nam, consectetur? Omnis ducimus odio consequuntur
-                                reiciendis vel sapiente ab modi!</p>
-                            <div class="containerButton">
-                                <button class="buttonAlternativo">Saiba mais</button>
-                            </div>
-                        </div>
+<!--                        <div class="textoSaibaMais">-->
+<!--                            <h2>Lorem Ipsum</h2>-->
+<!--                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, enim modi. Id itaque est-->
+<!--                                sapiente omnis debitis neque commodi. Nam, consectetur? Omnis ducimus odio consequuntur-->
+<!--                                reiciendis vel sapiente ab modi!</p>-->
+<!--                            <div class="containerButton">-->
+<!--                                <button class="buttonAlternativo">Saiba mais</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <img alt="" class="imgsSaibaMais" src="images/pexels-tehmasip-khan-6601811.jpg">-->
+<!--                    </div>-->
+<!--                    <div class="postagemSaibaMais">-->
+<!--                        <img alt="" class="imgsSaibaMais" src="images/pexels-emma-charles-7319890.jpg">-->
+<!--                        <div class="textoSaibaMais">-->
+<!--                            <h2>Lorem Ipsum</h2>-->
+<!--                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, enim modi. Id itaque est-->
+<!--                                sapiente omnis debitis neque commodi. Nam, consectetur? Omnis ducimus odio consequuntur-->
+<!--                                reiciendis vel sapiente ab modi!</p>-->
+<!--                            <div class="containerButton">-->
+<!--                                <button class="buttonAlternativo">Saiba mais</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
 
-                    </div>
-                </div>
-            </div>
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
             <!-- Formulario -->
-            <div id="containerFormulario">
-                <div id="formulario">
-                    <div id="textoForm">
-                        <h2>Lorem Ipsum Dolor Sit Amer</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sapiente tempore odio eveniet eius.
-                            Veniam, autem deserunt odio laudantium ullam libero ab voluptatem nisi eveniet error aut vitae
-                            saepe distinctio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem temporibus rem
-                            quo culpa repudiandae doloribus unde repellendus fugiat, consectetur ducimus dignissimos aliquam
-                            illo ipsum sit facilis blanditiis sapiente perferendis omnis!</p>
-                    </div>
-                    <div id="containerDivisor">
-                        <div id="divisor"></div>
-                    </div>
-                    <div id="textAreaForm">
-                        <div id="containerInput">
-                            <input type="text" name="" id="input">
-                            <input type="button" id="buttonForm" value="ENVIAR">
-                        </div>
-                        <textarea name="" id="textArea" cols="30" rows="10"></textarea>
-                    </div>
-                </div>
-            </div>
+<!--            <div id="containerFormulario">-->
+<!--                <div id="formulario">-->
+<!--                    <div id="textoForm">-->
+<!--                        <h2>Lorem Ipsum Dolor Sit Amer</h2>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sapiente tempore odio eveniet eius.-->
+<!--                            Veniam, autem deserunt odio laudantium ullam libero ab voluptatem nisi eveniet error aut vitae-->
+<!--                            saepe distinctio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem temporibus rem-->
+<!--                            quo culpa repudiandae doloribus unde repellendus fugiat, consectetur ducimus dignissimos aliquam-->
+<!--                            illo ipsum sit facilis blanditiis sapiente perferendis omnis!</p>-->
+<!--                    </div>-->
+<!--                    <div id="containerDivisor">-->
+<!--                        <div id="divisor"></div>-->
+<!--                    </div>-->
+<!--                    <div id="textAreaForm">-->
+<!--                        <div id="containerInput">-->
+<!--                            <input id="input" name="" type="text">-->
+<!--                            <input id="buttonForm" type="button" value="ENVIAR">-->
+<!--                        </div>-->
+<!--                        <textarea cols="30" id="textArea" name="" rows="10"></textarea>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
             <!-- Creditos -->
 
-            <div id="containerCreditos">
-                <div id="creditos">
-                    <div id=containerPostagem>
-                        <div class="postagemCreditos">
-                            <h2>Lorem Ipsum</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, a at dolore placeat facilis
-                                impedit assumenda eaque doloribus ad, deleniti, laboriosam ratione ipsam! Quibusdam ipsam
-                                ratione eligendi, veniam ad ipsum.</p>
-                        </div>
-                        <div class="postagemCreditos">
-                            <h2>Lorem Ipsum</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, a at dolore placeat facilis
-                                impedit assumenda eaque doloribus ad, deleniti, laboriosam ratione ipsam! Quibusdam ipsam
-                                ratione eligendi, veniam ad ipsum.</p>
-                        </div>
-                        <div class="postagemCreditos">
-                            <h2>Lorem Ipsum</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, a at dolore placeat facilis
-                                impedit assumenda eaque doloribus ad, deleniti, laboriosam ratione ipsam! Quibusdam ipsam
-                                ratione eligendi, veniam ad ipsum.</p>
-                        </div>
-                    </div>
-                    
-                    <div id="containerTextoPostagem">
-                        <div id="postagemTexto">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt quos, voluptas minima quod totam provident ipsum placeat exercitationem? Ratione dolor enim, mollitia corrupti atque dolore magnam hic in fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum deleniti similique earum laboriosam magni consequuntur deserunt omnis beatae optio, minus odio, eligendi tempora. Ipsa nisi pariatur cum excepturi eligendi quos.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        </div>
-                    </div>
+<!--            <div id="containerCreditos">-->
+<!--                <div id="creditos">-->
+<!--                    <div id=containerPostagem>-->
+<!--                        <div class="postagemCreditos">-->
+<!--                            <h2>Lorem Ipsum</h2>-->
+<!--                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, a at dolore placeat facilis-->
+<!--                                impedit assumenda eaque doloribus ad, deleniti, laboriosam ratione ipsam! Quibusdam ipsam-->
+<!--                                ratione eligendi, veniam ad ipsum.</p>-->
+<!--                        </div>-->
+<!--                        <div class="postagemCreditos">-->
+<!--                            <h2>Lorem Ipsum</h2>-->
+<!--                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, a at dolore placeat facilis-->
+<!--                                impedit assumenda eaque doloribus ad, deleniti, laboriosam ratione ipsam! Quibusdam ipsam-->
+<!--                                ratione eligendi, veniam ad ipsum.</p>-->
+<!--                        </div>-->
+<!--                        <div class="postagemCreditos">-->
+<!--                            <h2>Lorem Ipsum</h2>-->
+<!--                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, a at dolore placeat facilis-->
+<!--                                impedit assumenda eaque doloribus ad, deleniti, laboriosam ratione ipsam! Quibusdam ipsam-->
+<!--                                ratione eligendi, veniam ad ipsum.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
-                </div>
-            </div>
+<!--                    <div id="containerTextoPostagem">-->
+<!--                        <div id="postagemTexto">-->
+<!--                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt quos, voluptas minima-->
+<!--                                quod totam provident ipsum placeat exercitationem? Ratione dolor enim, mollitia corrupti-->
+<!--                                atque dolore magnam hic in fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit.-->
+<!--                                Eum deleniti similique earum laboriosam magni consequuntur deserunt omnis beatae optio,-->
+<!--                                minus odio, eligendi tempora. Ipsa nisi pariatur cum excepturi eligendi quos.</p>-->
+<!--                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+
+
         </section>
 
         <footer>
 
         </footer>
-    </div>
 </body>
 </html>

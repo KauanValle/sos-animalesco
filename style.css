@@ -1,95 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
 
 
-body{
+body {
     font-family: 'Raleway', sans-serif;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
+.container {
+    padding-left: 0;
 }
+
 
 ul li {
     list-style: none;
     display: inline;
 }
-a{
+
+a {
     text-decoration: none;
     margin: 5px;
     color: white;
     font-weight: 200;
 }
 
-header{
+.navbar-brand h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.carousel {
+    margin-top: 8%;
+}
+
+.carousel .card{
+    max-width: 28rem;
+    min-height: 20rem;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.6) ;
+}
+
+.card-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.card-body p {
+    font-size: 1.1rem;
+}
+
+
+header {
     display: flex;
     flex-direction: column;
-    background-image: url('images/pexels-christian-domingues-731022.jpg');
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/header-bg.jpg");
+
+
     background-position: center;
     background-size: cover;
     height: 100vh;
     width: 100%;
 }
 
-a:hover{
+a:hover {
     color: rgb(67, 252, 160);
     text-decoration: underline;
 }
-#titlePrincipal{
+
+#titlePrincipal {
     font-size: 50px;
-    margin: 10px 0px;
+    margin: 10px 0;
     color: white;
+    float: left;
 }
-#navbar{
-    display: flex;
+
+#navbar {
+    display: inline-flex;
     justify-content: end;
     width: 80%;
-    margin: 40px 0px;
+    margin: 40px 0;
 }
-#containerNavbar{
+
+
+#containerNavbar {
     display: flex;
     justify-content: center;
 }
 
-.barraPesquisa{
+.barraPesquisa {
     border-radius: 20px;
     border: none;
     padding: 7px;
     background-color: rgb(233, 233, 233);
 }
-.barraPesquisa:focus{
-    border:none;
+
+.barraPesquisa:focus {
+    border: none;
     outline: 0;
 }
-#containerHome{
-    
+
+#containerHome {
     width: 80%;
     display: flex;
     flex-direction: column;
     align-self: center;
 }
-.logo h1{
+
+.texto{
+    font-size: 1.4rem;
+}
+
+
+.logo h1 {
     font-size: 38px;
 }
 
-.textHome{
-    margin-top: 110px;
+.textHome {
+    background-color: rgba(68, 70, 74, 0.4);
+
     border-radius: 50px;
-    width: 400px;
+    width: 500px;
+
+    margin-top: 25px;
+    padding: 10px 30px;
+
 }
 
-.textHome h3{
+.textHome h3 {
     color: rgb(255, 255, 255);
     font-weight: 300;
 }
 
-.button{
+.button {
     font-family: 'Quicksand', sans-serif;
     background-color: white;
-    border:none;
+    border: none;
     padding: 10px;
     font-weight: bold;
     font-size: 16px;
@@ -97,12 +148,13 @@ a:hover{
     border-radius: 30px;
     margin-top: 50px;
 }
-.button:active{
+
+.button:active {
     background-color: #DDD;
 }
 
-.text{
-    margin: 10px 0px;
+.text {
+    margin: 10px 0;
     color: white;
     font-family: 'Quicksand', sans-serif;
 }
@@ -111,43 +163,51 @@ a:hover{
     display: flex;
     justify-content: center;
 }
-#blog{
-    height: 100vh;
+
+#blog {
+    min-height: auto;
+    height: 35rem;
     width: 80%;
+    margin-top: 4%;
+
 }
-#blog h2{
+
+#blog h2 {
     font-size: 60px;
-    margin: 70px 0px;
+    margin: 70px 0;
 }
-#textoBlog{
+
+#textoBlog {
     display: flex;
     flex-direction: column;
 
 }
 
-.imgs{
+.imgs {
     width: 300px;
     height: 300px;
 }
 
-#areaImgs{
-    margin: 50px 0px;
+#areaImgs {
+    margin: 50px 0;
     justify-content: center;
     display: flex;
 }
-.postagem{
+
+.postagem {
     width: 300px;
     margin: 20px;
 }
-.postagem h3{
+
+.postagem h3 {
     font-size: 26px;
     margin: 20px 0;
 }
 
-.buttonAlternativo{
+.buttonAlternativo {
     font-family: 'Quicksand', sans-serif;
     background-color: #55a0bd;
-    border:none;
+    border: none;
     padding: 10px;
     color: white;
     font-weight: bold;
@@ -157,81 +217,98 @@ a:hover{
     box-shadow: 1px 2px 15px rgb(138, 138, 138);
 }
 
-.buttonAlternativo:active{
+.buttonAlternativo:active {
     background-color: #71d3fa;
 }
-#containerQuemSomos{
-    height: 100vh;
+
+#containerQuemSomos {
+    height: 40%;
     width: 100%;
     background-color: #55a0bd;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
+    padding-bottom: 7%;
 }
-#containerPostagemQuemSomos{
-    margin-top: 150px;
+
+#containerParceiros{
+    height: 40%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white
+}
+
+#containerPostagemQuemSomos {
+    margin-top: 50px;
     justify-content: center;
     display: flex;
 }
-#containerSaibaMais{
+
+#containerSaibaMais {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-.imgsSaibaMais{
+.imgsSaibaMais {
     width: 400px;
     height: 400px;
     box-shadow: 10px 10px 30px black;
 }
 
-.postagemSaibaMais{
+.postagemSaibaMais {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
 
-.textoSaibaMais{
+.textoSaibaMais {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.textoSaibaMais p{
+.textoSaibaMais p {
     width: 80%;
     margin: 50px 0;
 }
 
-.textoSaibaMais h2{
+.textoSaibaMais h2 {
     font-size: 50px;
     margin: 30px 0;
 }
 
-#saibaMais{
-    
+#saibaMais {
+
     height: 100vh;
     width: 80%;
 }
-.containerButton{
+
+.containerButton {
     text-align: center;
 }
 
-.marginButton{
+.marginButton {
     margin-top: 120px;
 }
 
-#quemSomos{
+.quemSomos {
     width: 80%;
 }
-#tituloQuemSomos{
+
+.titulo {
     font-size: 60px;
-    margin: 70px 0px;
+    margin: 70px 0 0 0;
+    font-family: "Ubuntu", sans-serif;
 }
 
-.divisao{
+.divisao {
     margin: 20px;
     width: 40%;
 }
@@ -240,10 +317,10 @@ a:hover{
     font-size: 20px;
 }
 
-#textoForm h2{
+#textoForm h2 {
     font-size: 60px;
-    margin: 70px 0px;
-    
+    margin: 70px 0;
+
 }
 
 #textoForm {
@@ -251,12 +328,13 @@ a:hover{
 }
 
 
-#containerDivisor{
+#containerDivisor {
     display: flex;
     justify-content: center;
     margin: 30px 0;
 }
-#divisor{
+
+#divisor {
     background-color: white;
     width: 260px;
     height: 5px;
@@ -265,62 +343,65 @@ a:hover{
     justify-self: center;
 }
 
-#containerFormulario{
+#containerFormulario {
     display: flex;
     background-color: #55a0bd;
     align-items: center;
     justify-content: center;
 }
+
 #formulario {
     width: 80%;
     height: 100vh;
-    
+
 }
 
-#textAreaForm{
+#textAreaForm {
     text-align: center;
 }
 
-#textArea{
+#textArea {
     width: 700px;
     height: 350px;
     padding: 20px;
     font-size: 20px;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 30px 30px 0 0;
     border: none;
 }
 
-#input{
-    margin: 30px 0px;
+#input {
+    margin: 30px 0;
     width: 500px;
     font-size: 20px;
     height: 23px;
     padding: 20px;
     border: none;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 20px 0 0 20px;
 }
 
-#buttonForm{
-    margin: 30px 0px;
+#buttonForm {
+    margin: 30px 0;
     width: 220px;
     font-size: 20px;
     padding: 20px;
     border: none;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0 20px 20px 0;
     background-color: #222;
     color: white;
     font-weight: bold;
 }
 
-#input:focus, #textArea:focus{
+#input:focus, #textArea:focus {
     outline: 0;
 }
-#containerCreditos{
+
+#containerCreditos {
     height: 100vh;
     display: flex;
     justify-content: center;
 }
-#creditos{
+
+#creditos {
     margin-top: 180px;
     display: flex;
     flex-direction: column;
@@ -329,18 +410,18 @@ a:hover{
     width: 80%;
 }
 
-.postagemCreditos{
+.postagemCreditos {
     width: 440px;
     text-align: center;
 }
 
-#containerPostagem{
+#containerPostagem {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-#containerTextoPostagem{
+#containerTextoPostagem {
     display: flex;
     justify-content: center;
 }
@@ -350,6 +431,13 @@ a:hover{
     width: 70%;
     margin-top: 200px;
 }
+
 #postagemTexto p {
     margin-top: 50px;
+}
+
+@media (max-width: 770px) {
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("images/header-bg.jpg");
+    }
 }
