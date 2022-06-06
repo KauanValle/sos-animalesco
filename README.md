@@ -11,3 +11,8 @@ O Projeto S.O.S Animalesco foi criado a partir de uma iniciativa estudantil
 multidisciplinar da Universidade Positivo movida pelo desejo de implementar uma ação
 colaborativa, focada no resgate de animais abandonados.
 
+### TODO:
+- ~~Seção Quem Somos~~
+- ~~Seção Parceiros~~
+- Seção Blog 🚧
+- Seção Contato 
