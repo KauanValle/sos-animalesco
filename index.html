@@ -1,5 +1,5 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
 
@@ -122,16 +122,22 @@
         <section>
 
             <!-- Blog -->
-            <div id="containerBlog">
+            <div id="containerBlog" class="p-5">
                 <div id="blog">
                     <div id="carouselBlog" class="carousel carousel-dark slide container mt-auto mb-5" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselBlog" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselBlog" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselBlog" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+
+                        <div class="carousel-inner my-5">
+                            <div class="carousel-item active mb-5">
 
 
                                 <div class="card mt-5">
                                     <div class="card-body">
-                                        <h5 class="card-title">E aí, querendo ter um pet? </h5>
+                                        <h5 class="card-title">E aí, querendo ter um pet ?</h5>
                                         <p>Que tal adotar aquele que vai ser eternamente grato a você e a sua família? Você pode salvar uma vida! Adote.   </p>
                                     </div>
                                 </div>
@@ -142,7 +148,6 @@
 
                                 <div class="card mt-5">
                                     <div class="card-body">
-                                        <h3 class="card-title">Você Sabia ?</h3>
 
                                         <p>A Organização Mundial da Saúde (OMS) estima haver mais de 30 milhões de animais abandonados no Brasil, cerca de 20 milhões de cães e 10 milhões de gatos.
                                             Os cães podem até ser considerado os melhores amigos do homem, mas nem sempre o homem é o melhor amigo deles. </p>
@@ -169,14 +174,14 @@
                             </div>
                         </div>
 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBlog" data-bs-slide="prev">
+<!--                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBlog" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselBlog" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
-                        </button>
+                        </button>-->
                     </div>
                 </div>
             </div>
@@ -217,7 +222,7 @@
             <div id="containerParceiros">
                 <div id="nossosParceiros" class="quemSomos">
                     <h2 class="titulo text-dark display-1">Nossos Parceiros</h2>
-
+                    <hr>
                     <h2 class="titulo"> <img height="15%" width="15%" src="images/tomba-latas/tomba-latas.png" alt="logo tomba latas"> Tomba Latas</h2>
                     <div>
                         <div class="row mt-5">
@@ -315,4 +320,4 @@
 
         </footer>
 </body>
-</html>
+</html>'
