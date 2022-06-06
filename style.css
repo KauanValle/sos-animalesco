@@ -7,7 +7,7 @@
 
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .container {
@@ -98,12 +98,27 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-self: center;
+    margin: 0;
+    padding: 0;
 }
 
 .texto{
     font-size: 1.4rem;
 }
 
+.title{
+    font-weight: 500;
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+.navegacao {
+    justify-content: center;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+}
 
 .logo h1 {
     font-size: 38px;
