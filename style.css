@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-}
+/** {*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*}*/
 
 
 body {
@@ -93,17 +93,6 @@ a:hover {
     justify-content: center;
 }
 
-.barraPesquisa {
-    border-radius: 20px;
-    border: none;
-    padding: 7px;
-    background-color: rgb(233, 233, 233);
-}
-
-.barraPesquisa:focus {
-    border: none;
-    outline: 0;
-}
 
 #containerHome {
     width: 80%;
@@ -235,18 +224,28 @@ a:hover {
 #containerParceiros{
     height: 40%;
     width: 100%;
-    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white
 }
+
+#textoTomba{
+    font-size: 1.3rem;
+}
+
 
 #containerPostagemQuemSomos {
     margin-top: 50px;
     justify-content: center;
     display: flex;
 }
+
+.fundo-texto {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
 
 #containerSaibaMais {
     display: flex;
@@ -308,53 +307,7 @@ a:hover {
     font-family: "Ubuntu", sans-serif;
 }
 
-.divisao {
-    margin: 20px;
-    width: 40%;
-}
 
-.divisao p {
-    font-size: 20px;
-}
-
-#textoForm h2 {
-    font-size: 60px;
-    margin: 70px 0;
-
-}
-
-#textoForm {
-    color: white;
-}
-
-
-#containerDivisor {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0;
-}
-
-#divisor {
-    background-color: white;
-    width: 260px;
-    height: 5px;
-    border-radius: 30px;
-    display: flex;
-    justify-self: center;
-}
-
-#containerFormulario {
-    display: flex;
-    background-color: #55a0bd;
-    align-items: center;
-    justify-content: center;
-}
-
-#formulario {
-    width: 80%;
-    height: 100vh;
-
-}
 
 #textAreaForm {
     text-align: center;

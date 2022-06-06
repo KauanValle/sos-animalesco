@@ -9,7 +9,7 @@
             'gtm.start':
                 new Date().getTime(), event: 'gtm.js'
         });
-        var f = d.getElementsByTagName(s)[0],
+        let f = d.getElementsByTagName(s)[0],
             j = d.createElement(s), dl = l !== 'dataLayer' ? '&l=' + l : '';
         j.async = true;
         j.src =
@@ -59,24 +59,29 @@
     <header>
 
         <nav id="containerNavbar" class="navbar navbar-expand-lg navbar-light pe-5">
-            <div class="container" id="containerHome">
-                <a class="navbar-brand " href="#">
-                    <img src="images/logo/logo-azul.png" alt="" width="160" height="160" class="d-inline-block ">
-                    <h1 class="text-light d-inline-block ms-3">S.O.S Animalesco</h1>
-                </a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container-fluid">
+                <div class="container" id="containerHome">
+                    <a class="navbar-brand " href="#">
+                        <img src="images/logo/logo-azul.png" alt="" width="20%" height="20%" class="d-inline-block ">
+                        <h2 class="text-light d-inline-block ms-3">S.O.S Animalesco</h2>
+                    </a>
+                </div>
+                <button class="navbar-toggler text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarNav" class="collapse navbar-collapse">
 
-                <ul class="nav navbar-nav navbar-right me-5 ">
+                    <ul class="nav navbar-nav navbar-right text-center ms-auto">
 
-                    <li class="nav-item bg-white rounded-pill mx-2">
-                        <a class="nav-link" href="#quemSomos">Quem somos</a>
-                    </li>
+                        <li class="nav-item bg-white rounded-pill me-3">
+                            <a class="nav-link" href="#containerQuemSomos">Quem somos</a>
+                        </li>
 
-                    <li class="nav-item bg-white rounded-pill mx-2">
-                        <a class="nav-link" href="#nossosParceiros">Nossos Parceiros</a>
-                    </li>
-                </ul>
+                        <li class="nav-item bg-white rounded-pill ">
+                            <a class="nav-link" href="#nossosParceiros">Nossos Parceiros</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -113,12 +118,12 @@
             <!-- Blog -->
             <div id="containerBlog">
                 <div id="blog">
-                    <div id="myCarousel"  class="carousel carousel-dark slide container mt-auto mb-auto" data-bs-ride="carousel">
+                    <div id="carouselBlog" class="carousel carousel-dark slide container mt-auto mb-5" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
 
 
-                                <div class="card">
+                                <div class="card mt-5">
                                     <div class="card-body">
                                         <h5 class="card-title">E aí, querendo ter um pet? </h5>
                                         <p>Que tal adotar aquele que vai ser eternamente grato a você e a sua família? Você pode salvar uma vida! Adote.   </p>
@@ -129,11 +134,11 @@
                             </div>
                             <div class="carousel-item">
 
-                                <div class="card">
+                                <div class="card mt-5">
                                     <div class="card-body">
                                         <h3 class="card-title">Você Sabia ?</h3>
 
-                                        <p>A Organização Mundial da Saúde (OMS) estima que há mais de 30 milhões de animais abandonados no Brasil, cerca de 20 milhões de cães e 10 milhões de gatos.
+                                        <p>A Organização Mundial da Saúde (OMS) estima haver mais de 30 milhões de animais abandonados no Brasil, cerca de 20 milhões de cães e 10 milhões de gatos.
                                             Os cães podem até ser considerado os melhores amigos do homem, mas nem sempre o homem é o melhor amigo deles. </p>
 
                                     </div>
@@ -143,9 +148,9 @@
                             <div class="carousel-item">
 
 
-                                <div class="card bg-outline-dark">
+                                <div class="card mt-auto">
                                     <h3 class="card-title text-center">Tomba Latas</h3>
-                                    <img src="images/tomba-latas.png" height="250" class="card-img-top" alt="Logo Tomba-Latas">
+                                    <img src="images/tomba-latas/tomba-latas.png" height="250" class="card-img-top" alt="Logo Tomba-Latas">
                                     <div class="card-body">
                                         <p>Uma alternativa de ser um herói é entrando em contato com o nosso parceiro Tomba Latas que eles têm vários animaizinhos abrigados esperando um novo lar. <a href="#nossosParceiros"> Saiba Mais  </a> </p>
                                         <a href="https://www.instagram.com/tombalatas/" target="_blank" class="btn btn-outline-dark"><i class="fab fa-instagram"></i> </a>
@@ -158,11 +163,11 @@
                             </div>
                         </div>
 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBlog" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselBlog" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -205,114 +210,100 @@
 
             <div id="containerParceiros">
                 <div id="nossosParceiros" class="quemSomos">
-                    <h2 class="titulo text-dark">Nossos Parceiros - Tomba Latas</h2>
+                    <h2 class="titulo text-dark display-1">Nossos Parceiros</h2>
+
+                    <h2 class="titulo"> <img height="15%" width="15%" src="images/tomba-latas/tomba-latas.png" alt="logo tomba latas"> Tomba Latas</h2>
+                    <div>
+                        <div class="row mt-5">
+                            <div class="col-12 col-lg-12 col-xl-6 mb-5 text-dark" id="textoTomba">
+                                <h3 class="mb-4"> Atualmente estamos trabalhando com nosso parceiro Tomba Latas</h3>
+                                <div style="text-align: justify" >
+                                    <p> Se fosse possível resumir o grupo Tomba Latas em uma frase ela seria:  <strong> “Mais de mil vidas
+                                        salvas!” </strong>
+                                        Há mais de 11 anos resgatando cães e gatos das ruas de Curitiba, tratando e
+                                        encaminhando para adoção responsável. </p>
+                                    <p>Esse maravilho grupo é formado por 10 mulheres que são protetoras independentes que
+                                        destinam parte de seu tempo e recurso pessoais
+                                        para a proteção animal.
+                                        Tendo cada uma delas cerca de 40 a 125 cães sobre seus cuidados. </p>
+                                    <p>
+                                        O Tomba Latas não é uma ONG, portanto não contam com a ajuda direta do governo e
+                                        demais instituições. São apenas um grupo de amigos que resolveram tentar ajudar da
+                                        melhor maneira possível.
+                                    </p>
+                                    <p>
+                                        O projeto S.O.S Animalesco tem orgulho de ser parceiro dessa organização que é um
+                                        exemplo de amor e empatia por aqueles que já foram chamados de melhores amigos do
+                                        homem.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-12 col-xl-6">
+
+                                <div class="card ">
+                                    <div id="carouselTombaLatas" class="carousel  slide mt-0" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button"  data-bs-target="#carouselTombaLatas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselTombaLatas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselTombaLatas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="5000">
+                                                <img src="images/tomba-latas/clarinha.jpg" alt="foto da cadela Clarinha" class="card-img-bottom">
+
+                                                <div class="carousel-caption d-none d-md-block fundo-texto rounded-pill">
+                                                    <h5 > Clarinha</h5>
+                                                    <p>Foto retirada do Instagram do Tomba Latas</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item" data-bs-interval="5000">
+                                                <img src="images/tomba-latas/sofia.jpg" alt="Foto da cadela Sofia" class="card-img-bottom">
+
+                                                <div class="carousel-caption d-none d-md-block fundo-texto rounded-pill">
+                                                    <h5> Sofia</h5>
+                                                    <p>Foto retirada do Instagram do Tomba Latas</p>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="carousel-item" data-bs-interval="5000">
+                                                <img src="images/tomba-latas/jefferson.jpg" alt="Foto do cachorro Jefferson" class="card-img-bottom">
+
+                                                <div class="carousel-caption d-none d-md-block fundo-texto rounded-pill">
+                                                    <h5> Jefferson</h5>
+                                                    <p>Foto retirada do Instagram do Tomba Latas</p>
+                                                </div>
+                                            </div>
 
 
 
+                                        </div>
+
+
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTombaLatas" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselTombaLatas" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 </div>
             </div>
-
-
-            <!-- Saiba mais -->
-
-<!--            <div id="containerSaibaMais">-->
-<!--                <div id="saibaMais">-->
-
-<!--                    <div class="postagemSaibaMais">-->
-
-<!--                        <div class="textoSaibaMais">-->
-<!--                            <h2>Lorem Ipsum</h2>-->
-<!--                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, enim modi. Id itaque est-->
-<!--                                sapiente omnis debitis neque commodi. Nam, consectetur? Omnis ducimus odio consequuntur-->
-<!--                                reiciendis vel sapiente ab modi!</p>-->
-<!--                            <div class="containerButton">-->
-<!--                                <button class="buttonAlternativo">Saiba mais</button>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <img alt="" class="imgsSaibaMais" src="images/pexels-tehmasip-khan-6601811.jpg">-->
-<!--                    </div>-->
-<!--                    <div class="postagemSaibaMais">-->
-<!--                        <img alt="" class="imgsSaibaMais" src="images/pexels-emma-charles-7319890.jpg">-->
-<!--                        <div class="textoSaibaMais">-->
-<!--                            <h2>Lorem Ipsum</h2>-->
-<!--                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, enim modi. Id itaque est-->
-<!--                                sapiente omnis debitis neque commodi. Nam, consectetur? Omnis ducimus odio consequuntur-->
-<!--                                reiciendis vel sapiente ab modi!</p>-->
-<!--                            <div class="containerButton">-->
-<!--                                <button class="buttonAlternativo">Saiba mais</button>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-
-            <!-- Formulario -->
-<!--            <div id="containerFormulario">-->
-<!--                <div id="formulario">-->
-<!--                    <div id="textoForm">-->
-<!--                        <h2>Lorem Ipsum Dolor Sit Amer</h2>-->
-<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sapiente tempore odio eveniet eius.-->
-<!--                            Veniam, autem deserunt odio laudantium ullam libero ab voluptatem nisi eveniet error aut vitae-->
-<!--                            saepe distinctio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem temporibus rem-->
-<!--                            quo culpa repudiandae doloribus unde repellendus fugiat, consectetur ducimus dignissimos aliquam-->
-<!--                            illo ipsum sit facilis blanditiis sapiente perferendis omnis!</p>-->
-<!--                    </div>-->
-<!--                    <div id="containerDivisor">-->
-<!--                        <div id="divisor"></div>-->
-<!--                    </div>-->
-<!--                    <div id="textAreaForm">-->
-<!--                        <div id="containerInput">-->
-<!--                            <input id="input" name="" type="text">-->
-<!--                            <input id="buttonForm" type="button" value="ENVIAR">-->
-<!--                        </div>-->
-<!--                        <textarea cols="30" id="textArea" name="" rows="10"></textarea>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-
-            <!-- Creditos -->
-
-<!--            <div id="containerCreditos">-->
-<!--                <div id="creditos">-->
-<!--                    <div id=containerPostagem>-->
-<!--                        <div class="postagemCreditos">-->
-<!--                            <h2>Lorem Ipsum</h2>-->
-<!--                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, a at dolore placeat facilis-->
-<!--                                impedit assumenda eaque doloribus ad, deleniti, laboriosam ratione ipsam! Quibusdam ipsam-->
-<!--                                ratione eligendi, veniam ad ipsum.</p>-->
-<!--                        </div>-->
-<!--                        <div class="postagemCreditos">-->
-<!--                            <h2>Lorem Ipsum</h2>-->
-<!--                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, a at dolore placeat facilis-->
-<!--                                impedit assumenda eaque doloribus ad, deleniti, laboriosam ratione ipsam! Quibusdam ipsam-->
-<!--                                ratione eligendi, veniam ad ipsum.</p>-->
-<!--                        </div>-->
-<!--                        <div class="postagemCreditos">-->
-<!--                            <h2>Lorem Ipsum</h2>-->
-<!--                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, a at dolore placeat facilis-->
-<!--                                impedit assumenda eaque doloribus ad, deleniti, laboriosam ratione ipsam! Quibusdam ipsam-->
-<!--                                ratione eligendi, veniam ad ipsum.</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                    <div id="containerTextoPostagem">-->
-<!--                        <div id="postagemTexto">-->
-<!--                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt quos, voluptas minima-->
-<!--                                quod totam provident ipsum placeat exercitationem? Ratione dolor enim, mollitia corrupti-->
-<!--                                atque dolore magnam hic in fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit.-->
-<!--                                Eum deleniti similique earum laboriosam magni consequuntur deserunt omnis beatae optio,-->
-<!--                                minus odio, eligendi tempora. Ipsa nisi pariatur cum excepturi eligendi quos.</p>-->
-<!--                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                </div>-->
-<!--            </div>-->
-
-
         </section>
+
+
+
 
         <footer>
 
