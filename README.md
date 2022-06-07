@@ -14,5 +14,6 @@ colaborativa, focada no resgate de animais abandonados.
 ### TODO:
 - ~~Seção Quem Somos~~
 - ~~Seção Parceiros~~
+- ~~Seção Contato~~
 - Seção Blog 🚧
-- Seção Contato 
+
