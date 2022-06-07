@@ -8,11 +8,14 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .container {
     padding-left: 0;
 }
+
 
 
 ul li {
@@ -63,7 +66,7 @@ header {
 
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -109,6 +112,10 @@ a:hover {
 .title{
     font-weight: 500;
     font-family: "Ubuntu", sans-serif;
+}
+
+.navbar-nav{
+    text-align: right;
 }
 
 
@@ -235,7 +242,7 @@ a:hover {
 }
 
 #containerParceiros{
-    height: 40%;
+    min-height: 30%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -401,6 +408,29 @@ a:hover {
 #postagemTexto p {
     margin-top: 50px;
 }
+
+#contato {
+    background-color: #55a0bd;
+    min-height: 200px;
+    margin-bottom: 0;
+    margin-top: 5%;
+}
+
+#container-contato{
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+
+#contato p {
+    margin: 0.5rem;
+}
+.contatos{
+    font-size: 2rem;
+}
+
+
 
 @media (max-width: 770px) {
     header {

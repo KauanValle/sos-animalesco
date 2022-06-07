@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <script>(function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({
@@ -22,17 +21,22 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<!--      CSS & Bootstrap-->
+    <!--      CSS & Bootstrap-->
     <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
     <!--  Javascript   -->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -44,8 +48,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
     <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-          integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+          integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" rel="stylesheet">
 
 
     <title>SOS Animalesco</title>
@@ -61,219 +65,277 @@
     </noscript>
 
 
+    <div class="container-wrap">
+        <header>
+            <nav class="navegacao navbar navbar-dark navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-light" href="">
+                        <img class="d-inline-block align-text-bottom" heigh="30%" src="images/logo/logo-azul.png" width="30%">
+                    </a>
+                    <button aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                            data-bs-target="#myNavbar" data-bs-toggle="collapse" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-    <header>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <div class="navbar-nav ms-auto">
 
-        <nav class="navegacao navbar navbar-expand-lg ">
-
-            <div class="container-fluid">
-                <a class="navbar-brand text-light" href="">
-                    <img src="images/logo/logo-azul.png" width="30%" heigh="30%" class="d-inline-block align-text-bottom">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <div class="navbar-nav ms-auto">
-
-                        <ul class="nav navbar-nav text-center">
-                            <li class="bg-light rounded-pill m-2 ">
-                                <a class="nav-link text-dark" href="#containerQuemSomos">Quem Somos</a>
-                            </li>
-                            <li class="bg-light rounded-pill m-2">
-                                <a class="nav-link text-dark" href="#nossosParceiros">Parceiros</a>
-                            </li>
-                            <li class="bg-light rounded-pill m-2">
-                                <a class="nav-link text-dark" href="#contato">Contato</a>
-                            </li>
-                        </ul>
+                            <ul class="nav navbar-nav text-center">
+                                <li class="bg-light rounded-pill m-2 ">
+                                    <a class="nav-link text-dark" href="#containerQuemSomos">Quem Somos</a>
+                                </li>
+                                <li class="bg-light rounded-pill m-2">
+                                    <a class="nav-link text-dark" href="#nossosParceiros">Parceiros</a>
+                                </li>
+                                <li class="bg-light rounded-pill m-2">
+                                    <a class="nav-link text-dark" href="#contato">Contato</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <section>
+        <section>
 
-        <!-- Blog -->
-        <div id="containerBlog" class="p-auto">
-            <div id="blog">
-                <div id="carouselBlog" class="carousel carousel-dark slide container mt-auto mb-5" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselBlog" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselBlog" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselBlog" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner mt-auto">
-                        <div class="carousel-item active mb-5">
-                            <div class="card mt-auto">
-                                <div class="card-body">
-                                    <h5 class="card-title">E aí, querendo ter um pet ?</h5>
-                                    <p>Que tal adotar aquele que vai ser eternamente grato a você e a sua família? Você pode salvar uma vida! Adote.   </p>
+            <!-- Blog -->
+            <div class="p-auto" id="containerBlog">
+                <div id="blog">
+                    <div class="carousel carousel-dark slide container mt-auto mb-5" data-bs-ride="carousel" id="carouselBlog">
+                        <div class="carousel-indicators">
+                            <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                                    data-bs-target="#carouselBlog" type="button"></button>
+                            <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselBlog"
+                                    type="button"></button>
+                            <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselBlog"
+                                    type="button"></button>
+                        </div>
+                        <div class="carousel-inner mt-auto">
+                            <div class="carousel-item active mb-5">
+                                <div class="card mt-auto">
+                                    <div class="card-body">
+                                        <h5 class="card-title">E aí, querendo ter um pet ?</h5>
+                                        <p>Que tal adotar aquele que vai ser eternamente grato a você e a sua família? Você pode
+                                            salvar uma vida! Adote. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mt-5">
+                                    <div class="card-body">
+                                        <p>A Organização Mundial da Saúde (OMS) estima haver mais de 30 milhões de animais
+                                            abandonados no Brasil, cerca de 20 milhões de cães e 10 milhões de gatos.
+                                            Os cães podem até ser considerado os melhores amigos do homem, mas nem sempre o
+                                            homem é o melhor amigo deles.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="card mt-auto">
+                                    <h3 class="card-title text-center">Tomba Latas</h3>
+                                    <img alt="Logo Tomba-Latas" class="card-img-top" height="250"
+                                         src="images/tomba-latas/tomba-latas.png">
+                                    <div class="card-body">
+                                        <p>Uma alternativa de ser um herói é entrando em contato com o nosso parceiro Tomba
+                                            Latas que eles têm vários animaizinhos abrigados esperando um novo lar. <a
+                                                    href="#nossosParceiros"> Saiba Mais  </a></p>
+                                        <a class="btn btn-outline-dark" href="https://www.instagram.com/tombalatas/"
+                                           target="_blank"><i class="fab fa-instagram"></i> </a>
+                                        <a class="btn btn-outline-dark" href="https://pt-br.facebook.com/tombalatas/"
+                                           target="_blank"><i class="fab fa-facebook"></i> </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="card mt-5">
-                                <div class="card-body">
-                                    <p>A Organização Mundial da Saúde (OMS) estima haver mais de 30 milhões de animais abandonados no Brasil, cerca de 20 milhões de cães e 10 milhões de gatos.
-                                        Os cães podem até ser considerado os melhores amigos do homem, mas nem sempre o homem é o melhor amigo deles.
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Quem somos -->
+            <div id="containerQuemSomos">
+                <div class="quemSomos">
+                    <h2 class="titulo">Quem somos?</h2>
+                    <div id="containerPostagemQuemSomos">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-5">
+                                <div class="card">
+                                    <img alt="..." class="card-img-top" src="images/grupo-sos.png">
+                                    <div class="card-body">
+                                        <p class="card-text text-dark">Turma Responsável pelo Projeto 2022/01 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6" style="text-align: justify">
+                                <p class="texto">
+                                    O projeto S.O.S Animalesco nasceu de uma iniciativa voluntária estudantil
+                                    multidisciplinar da Universidade Positivo movida pelo desejo de implementar uma ação
+                                    efetiva e colaborativa, focada na divulgação de animais abandonados bem como a busca por
+                                    patrocinadores e doações para as instituições parceiras. <br><br>
+                                    Além de ser a sua dose diária nas redes sociais de informação sobre os cuidados e
+                                    curiosidades dos nossos amados bichinhos. <br><br>
+                                    Nós não possuímos abrigos e não resgatamos animais. Todas as doações e suportes são
+                                    encaminhados para nossos parceiros.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="containerParceiros">
+                <div class="quemSomos" id="nossosParceiros">
+                    <h2 class="titulo text-dark display-1">Nossos Parceiros</h2>
+                    <hr>
+                    <h2 class="titulo"><img alt="logo tomba latas" height="15%" src="images/tomba-latas/tomba-latas.png"
+                                            width="15%"> Tomba Latas</h2>
+                    <div>
+                        <div class="row mt-5">
+                            <div class="col-12 col-lg-12 col-xl-6 mb-5 text-dark" id="textoTomba">
+                                <h3 class="mb-4"> Atualmente estamos trabalhando com nosso parceiro Tomba Latas</h3>
+                                <div style="text-align: justify">
+                                    <p> Se fosse possível resumir o grupo Tomba Latas em uma frase ela seria: <strong> “Mais
+                                        de mil vidas salvas!” </strong> Há mais de 11 anos resgatando cães e gatos das ruas
+                                        de Curitiba, tratando e encaminhando para adoção responsável. </p>
+
+                                    <p>Esse maravilho grupo é formado por 10 mulheres que são protetoras independentes que
+                                        destinam parte de seu tempo e recurso pessoais para a proteção animal. Tendo cada
+                                        uma delas cerca de 40 a 125 cães sobre seus cuidados. </p>
+
+                                    <p> O Tomba Latas não é uma ONG, portanto não contam com a ajuda direta do governo e
+                                        demais instituições. São apenas um grupo de amigos que resolveram tentar ajudar da
+                                        melhor maneira possível.
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
 
-                            <div class="card mt-auto">
-                                <h3 class="card-title text-center">Tomba Latas</h3>
-                                <img src="images/tomba-latas/tomba-latas.png" height="250" class="card-img-top" alt="Logo Tomba-Latas">
-                                <div class="card-body">
-                                    <p>Uma alternativa de ser um herói é entrando em contato com o nosso parceiro Tomba Latas que eles têm vários animaizinhos abrigados esperando um novo lar. <a href="#nossosParceiros"> Saiba Mais  </a> </p>
-                                    <a href="https://www.instagram.com/tombalatas/" target="_blank" class="btn btn-outline-dark"><i class="fab fa-instagram"></i> </a>
-                                    <a href="https://pt-br.facebook.com/tombalatas/" target="_blank" class="btn btn-outline-dark"><i class="fab fa-facebook"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Quem somos -->
-        <div id="containerQuemSomos">
-            <div class="quemSomos">
-                <h2 class="titulo">Quem somos?</h2>
-                <div id="containerPostagemQuemSomos">
-                    <div class="row">
-                        <div class="col-12 col-lg-6 mb-5">
-                            <div class="card">
-                                <img src="images/grupo-sos.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text text-dark">Turma Responsável pelo Projeto 2022/01 </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6" style="text-align: justify">
-                            <p class="texto">
-                                O projeto S.O.S Animalesco nasceu de uma iniciativa voluntária estudantil
-                                multidisciplinar da Universidade Positivo movida pelo desejo de implementar uma ação
-                                efetiva e colaborativa, focada na divulgação de animais abandonados bem como a busca por
-                                patrocinadores e doações para as instituições parceiras. <br><br>
-                                Além de ser a sua dose diária nas redes sociais de informação sobre os cuidados e
-                                curiosidades dos nossos amados bichinhos. <br><br>
-                                Nós não possuímos abrigos e não resgatamos animais. Todas as doações e suportes são
-                                encaminhados para nossos parceiros.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="containerParceiros">
-            <div id="nossosParceiros" class="quemSomos">
-                <h2 class="titulo text-dark display-1">Nossos Parceiros</h2>
-                <hr>
-                <h2 class="titulo"> <img height="15%" width="15%" src="images/tomba-latas/tomba-latas.png" alt="logo tomba latas"> Tomba Latas</h2>
-                <div>
-                    <div class="row mt-5">
-                        <div class="col-12 col-lg-12 col-xl-6 mb-5 text-dark" id="textoTomba">
-                            <h3 class="mb-4"> Atualmente estamos trabalhando com nosso parceiro Tomba Latas</h3>
-                            <div style="text-align: justify" >
-                                <p> Se fosse possível resumir o grupo Tomba Latas em uma frase ela seria:  <strong> “Mais de mil vidas
-                                    salvas!” </strong>
-                                    Há mais de 11 anos resgatando cães e gatos das ruas de Curitiba, tratando e
-                                    encaminhando para adoção responsável. </p>
-                                <p>Esse maravilho grupo é formado por 10 mulheres que são protetoras independentes que
-                                    destinam parte de seu tempo e recurso pessoais
-                                    para a proteção animal.
-                                    Tendo cada uma delas cerca de 40 a 125 cães sobre seus cuidados. </p>
-                                <p>
-                                    O Tomba Latas não é uma ONG, portanto não contam com a ajuda direta do governo e
-                                    demais instituições. São apenas um grupo de amigos que resolveram tentar ajudar da
-                                    melhor maneira possível.
-                                </p>
-                                <p>
-                                    O projeto S.O.S Animalesco tem orgulho de ser parceiro dessa organização que é um
-                                    exemplo de amor e empatia por aqueles que já foram chamados de melhores amigos do
-                                    homem.
-                                </p>
-                                <div>
-                                    <hr>
-                                    Contato:
-                                    <a href="https://www.instagram.com/tombalatas/" target="_blank" class="btn btn-lg btn-outline-dark"><i class="fab fa-instagram"></i> </a>
-                                    <a href="https://pt-br.facebook.com/tombalatas/" target="_blank" class="btn btn-lg btn-outline-dark"><i class="fab fa-facebook"></i> </a>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-lg-12 col-xl-6">
-
-                            <div class="card align-content-center" style="max-width: 60rem">
-                                <div id="carouselTombaLatas" class="carousel  slide mt-0" data-bs-ride="carousel">
-                                    <div class="carousel-indicators">
-                                        <button type="button"  data-bs-target="#carouselTombaLatas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselTombaLatas" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carouselTombaLatas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <p>
+                                        O projeto S.O.S Animalesco tem orgulho de ser parceiro dessa organização que é um
+                                        exemplo de amor e empatia por aqueles que já foram chamados de melhores amigos do
+                                        homem.
+                                    </p>
+                                    <div>
+                                        <hr>
+                                        Contato:
+                                        <a class="btn btn-lg btn-outline-dark" href="https://www.instagram.com/tombalatas/"
+                                           target="_blank"><i class="fab fa-instagram"></i> </a>
+                                        <a class="btn btn-lg btn-outline-dark" href="https://pt-br.facebook.com/tombalatas/"
+                                           target="_blank"><i class="fab fa-facebook"></i> </a>
                                     </div>
 
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active" data-bs-interval="5000">
-                                            <img src="images/tomba-latas/clarinha.jpg" alt="foto da cadela Clarinha" class="card-img-bottom">
+                                </div>
+                            </div>
 
-                                            <div class="carousel-caption d-none d-md-block fundo-texto rounded-pill">
-                                                <h5 > Clarinha</h5>
-                                                <p>Foto retirada do Instagram do Tomba Latas</p>
+                            <div class="col-12 col-lg-12 col-xl-6">
+
+                                <div class="card align-content-center" style="max-width: 60rem">
+                                    <div class="carousel  slide mt-0" data-bs-ride="carousel" id="carouselTombaLatas">
+                                        <div class="carousel-indicators">
+                                            <button aria-current="true" aria-label="Slide 1" class="active"
+                                                    data-bs-slide-to="0" data-bs-target="#carouselTombaLatas"
+                                                    type="button"></button>
+                                            <button aria-label="Slide 2" data-bs-slide-to="1"
+                                                    data-bs-target="#carouselTombaLatas"
+                                                    type="button"></button>
+                                            <button aria-label="Slide 3" data-bs-slide-to="2"
+                                                    data-bs-target="#carouselTombaLatas"
+                                                    type="button"></button>
+                                        </div>
+
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="5000">
+                                                <img alt="foto da cadela Clarinha" class="card-img-bottom"
+                                                     src="images/tomba-latas/clarinha.jpg">
+
+                                                <div class="carousel-caption d-none d-md-block fundo-texto rounded-pill">
+                                                    <h5> Clarinha</h5>
+                                                    <p>Foto retirada do Instagram do Tomba Latas</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item" data-bs-interval="5000">
+                                                <img alt="Foto da cadela Sofia" class="card-img-bottom"
+                                                     src="images/tomba-latas/sofia.jpg">
+
+                                                <div class="carousel-caption d-none d-md-block fundo-texto rounded-pill">
+                                                    <h5> Sofia</h5>
+                                                    <p>Foto retirada do Instagram do Tomba Latas</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item" data-bs-interval="5000">
+                                                <img alt="Foto do cachorro Jefferson" class="card-img-bottom"
+                                                     src="images/tomba-latas/jefferson.jpg">
+
+                                                <div class="carousel-caption d-none d-md-block fundo-texto rounded-pill">
+                                                    <h5> Jefferson</h5>
+                                                    <p>Foto retirada do Instagram do Tomba Latas</p>
+                                                </div>
                                             </div>
                                         </div>
 
-                                        <div class="carousel-item" data-bs-interval="5000">
-                                            <img src="images/tomba-latas/sofia.jpg" alt="Foto da cadela Sofia" class="card-img-bottom">
 
-                                            <div class="carousel-caption d-none d-md-block fundo-texto rounded-pill">
-                                                <h5> Sofia</h5>
-                                                <p>Foto retirada do Instagram do Tomba Latas</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="carousel-item" data-bs-interval="5000">
-                                            <img src="images/tomba-latas/jefferson.jpg" alt="Foto do cachorro Jefferson" class="card-img-bottom">
-
-                                            <div class="carousel-caption d-none d-md-block fundo-texto rounded-pill">
-                                                <h5> Jefferson</h5>
-                                                <p>Foto retirada do Instagram do Tomba Latas</p>
-                                            </div>
-                                        </div>
+                                        <button class="carousel-control-prev" data-bs-slide="prev"
+                                                data-bs-target="#carouselTombaLatas"
+                                                type="button">
+                                            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" data-bs-slide="next"
+                                                data-bs-target="#carouselTombaLatas"
+                                                type="button">
+                                            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
-
-
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTombaLatas" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTombaLatas" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
+        </section>
+
+        <footer id="contato">
+            <div id="container-contato">
+
+                <h2 class="titulo text-light display-1">Contato</h2>
+                <hr class="text-light">
+
+                <div class="d-grid gap-2">
+                    <a href="https://chat.whatsapp.com/CPZMOSqknghHkMEHuZiaCj"
+                       class="btn btn-outline-light"
+                       type="button"
+                       target="_blank">
+                        <p class="contatos">
+                            <i class="fab fa-whatsapp"></i>
+                            Nosso Whatsapp
+                        </p>
+                    </a>
+
+                    <a href="https://www.facebook.com/s.o.s.Animalescos"
+                       target="_blank"
+                       class="btn btn-outline-light"
+                       type="button">
+                        <p class="contatos">
+                            <i class="fab fa-facebook-f"></i>
+                            Nosso Facebook
+                        </p>
+                    </a>
+
+                    <a href="https://www.instagram.com/s.o.s_animalesco/" target="_blank" class="btn btn-outline-light" type="button">
+                        <p class="contatos">
+                            <i class="fab fa-instagram"></i>
+                            Nosso Instagram
+                        </p>
+                    </a>
+                </div>
 
             </div>
-        </div>
-    </section>
-
-
-
-
-        <footer>
-
         </footer>
+
+    </div>
 </body>
-</html>'
+</html>
