@@ -411,21 +411,33 @@ a:hover {
 
 #contato {
     background-color: #55a0bd;
-    min-height: 200px;
+    min-height: 150px;
     margin-bottom: 0;
-    margin-top: 5%;
+    margin-top: 2%;
+    padding-bottom: 2%;
 }
 
 #container-contato{
     width: 80%;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 0;
 }
 
 
 #contato p {
     margin: 0.5rem;
 }
+
+#contato h2 {
+    padding-top: 2%;
+    font-size: 1.75rem;
+}
+
+#contato hr {
+    margin-top: 1%;
+    padding-top: 0;
+}
+
 .contatos{
     font-size: 2rem;
 }
