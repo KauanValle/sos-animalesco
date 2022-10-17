@@ -12,8 +12,8 @@ multidisciplinar da Universidade Positivo movida pelo desejo de implementar uma 
 colaborativa, focada no resgate de animais abandonados.
 
 ### TODO:
-- ~~Seção Quem Somos~~
-- ~~Seção Parceiros~~
-- ~~Seção Contato~~
-- Seção Blog 🚧
+- ~~Sessão Quem Somos~~
+- ~~Sessão Parceiros~~
+- ~~Sessão Contato~~
+- Sessão Blog 🚧
 
